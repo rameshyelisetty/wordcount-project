@@ -1,0 +1,11 @@
+<h1>Word Count</h1>
+<p>This is var1: {{ var1 }}</p>
+
+<form class="" action="{% url 'countwords' %}">
+  <h2>Enter your text here:</h2>
+  <textarea name="fulltext" rows="8" cols="80"></textarea>
+  <br>
+  <input type="submit" name="" value="Count!">
+</form>
+<br>
+<a href="{% url 'about' %}">About Us</a>

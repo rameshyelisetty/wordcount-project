@@ -1,0 +1,13 @@
+<h1>Your word count is: {{ wordcount }}</h1>
+<a href="{% url 'home' %}">Start Again!</a>
+
+<h2>You entered:</h2>
+
+<p>{{ myfulltext }}</p>
+
+<h2>Word Stats</h2>
+
+{% for key, count in wordstats %}
+{{ key }} - {{ count }}
+<br>
+{% endfor %}
